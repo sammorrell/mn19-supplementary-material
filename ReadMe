@@ -1,0 +1,522 @@
+                                                      (Morrell+, 2019)
+================================================================================
+Exploring the M-dwarf Luminosity - Temperature - Radius Relationships using Gaia
+DR2
+    Morrell S.A.F, Naylor T.
+    =
+================================================================================
+Keywords: techniques: photometric – stars: low-mass – stars: late-
+          type – stars: fundamental parameters
+
+Abstract:
+  There is growing evidence that M-dwarf stars suffer radius inflation when
+  compared to theoretical models, suggesting that models are missing some key
+  physics required to completely describe stars at effective temperatures (TSED)
+  less than about 4000K. The advent of Gaia DR2 distances finally makes
+  available large datasets to determine the nature and extent of this effect.We
+  employ an all-sky sample, comprising of>15 000 stars, to determine empirical
+  relation-ships between luminosity, temperature and radius.This is accomplished
+  using only geometric distances and multiwave-band photometry, by utilising a
+  modified spectral energy distribution fitting method. The radii we measure
+  show an inflation of3−7%compared to models, but nomore than a 1−2% intrinsic
+  spread in the inflated sequence. We show that we are currently able to
+  determine M-dwarf radii to an accuracy of 2.4% using our method. However, we
+  determine that this is limited by the precision of metallicity measurements,
+  which contribute 1.7% to the measured radius scatter. We also present evidence
+  that stellar magnetism is currently unable to explain radius inflation in
+  M-dwarfs.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName    Lrecl   Records    Explanations
+--------------------------------------------------------------------------------
+ReadMe                                 80        .  this file
+mdwarf-properties.dat                 822    15765  Input data and fitted properties for stars in our sample. 
+tsed-r-relation.dat                    64     1401  A tabulated form of our T_SED - R relation for M-dwarf stars. 
+lsed-r-relation.dat                   141       98  A tabulated form of our L_SED - R relation for M-dwarf stars. 
+table3-tabulated-feh-corrections.dat   43       97  A electronic version of Table 3, which are the tabulated values of F(L_SED) in equation 16. 
+mdwarf-properties.fits                822    15765  A FITS version of our main catalogue. 
+tsed-r-relation.fits                   64     1401  A FITS version of our tabulated T_SED - R relation. 
+lsed-r-relation.fits                  141       98  A FITS version of our tabulated L_SED - R relation. 
+table3-tabulated-feh-corrections.fits  43       97  A FITS version of our tabulated values of F(L_SED). 
+
+
+See also:
+ I/345            : Gaia DR2 (Gaia Collaboration, 2018)
+ II/246           : 2MASS All-Sky Catalog of Point Sources (Cutri+ 2003)
+ II/328           : AllWISE Data Release (Cutri+ 2013)
+ I/347            : Distances to 1.33 billion stars in Gaia DR2 (Bailer-Jones+,
+2018)
+ IV/35            : Gaia DR2-WISE Galactic Plane Matches (Wilson+, 2018)
+ J/MNRAS/432/1203 : Rotation periods of M-dwarf stars (McQuillan+, 2013)
+ J/ApJS/211/24    : Rotation periods of Kepler MS stars (McQuillan+, 2014)
+ IX/50            : XMM-Newton Serendipitous Source Catalogue 3XMM-DR6 (XMM-SSC,
+2016)
+ II/321           : IPHAS DR2 Source Catalogue (Barentsen+, 2014)
+ II/341           : VPHAS+ DR2 survey (Drew+, 2016)
+ J/MNRAS/443/2561 : CONCH-SHELL catalog of nearby M dwarfs (Gaidos+, 2014)
+ J/ApJS/220/16    : SpeX NIR survey of 886 nearby M dwarfs (Terrien+, 2015)
+
+--------------------------------------------------------------------------------
+Byte-by-byte Description of file: mdwarf-properties.dat
+--------------------------------------------------------------------------------
+ Bytes Format Units  Label     Explanations
+--------------------------------------------------------------------------------
+  1-  5   I5     ---    id                        [1.0/15765.0]? Internal
+                                                identifier for the object within
+                                                our catalogue.
+  7- 28   F22.18 deg    ra                        [0.0/360.0]? Right ascension
+                                                of the source as given in the
+                                                Gaia DR2 catalogue.
+ 30- 52   F23.19 deg    dec                       [-89.7/88.7]? Declination of
+                                                the source as given in the Gaia
+                                                DR2 catalogue.
+ 54- 72   I19    ---    source_id                 Unique source indentifier of
+                                                the star within Gaia DR2.
+ 74- 83   F10.7  mag    phot_g_mean_mag           [9.0/18.1]? G-band mean
+                                                magnitude of the star in the
+                                                Gaia DR2 catalogue.
+ 85- 94   F10.7  mag    phot_bp_mean_mag          [9.9/20.7]? Integrated BP mean
+                                                magnitude of the star in the
+                                                Gaia DR2 catalogue.
+ 96-105   F10.7  mag    phot_rp_mean_mag          [8.2/16.4]? Integrated RP mean
+                                                magnitude of the star in the
+                                                Gaia DR2 catalogue.
+107-127   F21.19 mag    phot_bp_mean_mag_err      [0.0/0.3]? Uncertainty of the
+                                                BP mean magnitude of the star in
+                                                the Gaia DR2 catalogue.
+129-150   F22.20 mag    phot_rp_mean_mag_err      [0.0/0.2]? Uncertainty of the
+                                                RP mean magnitude of the star in
+                                                the Gaia DR2 catalogue.
+152-173   F22.14 'electron'.s**-1 phot_bp_mean_flux         [70.8/1558645.7]?
+                                                Integrated BP mean flux of the
+                                                star in the Gaia DR2 catalogue.
+175-195   F21.13 'electron'.s**-1 phot_rp_mean_flux         [2151.7/4289144.1]?
+                                                Integrated RP mean flux of the
+                                                star in the Gaia DR2 catalogue.
+197-217   F21.13 'electron'.s**-1 phot_g_mean_flux          [1119.5/4568808.6]?
+                                                G-band mean flux of the star in
+                                                the Gaia DR2 catalogue.
+219-230   F12.6  ---    astrometric_chi2_al       [56.3/24146.0]? Astrometric
+                                                goodness of fit in the Gaia DR2
+                                                catalogue.
+232-234   I3     ---    astrometric_n_good_obs_al [66.0/916.0]? No. CCD transits
+                                                not downweighted in the
+                                                astrometric solution in the Gaia
+                                                DR2 Catalogue.
+236-241   F6.3   mag    Jmag_cds                  [6.9/13.9]? $J$ band magnitude
+                                                of the star in 2MASS.
+243-247   F5.3   mag    e_Jmag_cds                [0.0/0.1]? Uncertainty in $J$
+                                                band magnitude of the star in
+                                                2MASS.
+249-254   F6.3   mag    Hmag_cds                  [6.3/13.4]? $H$ band magnitude
+                                                of the star in 2MASS.
+256-260   F5.3   mag    e_Hmag_cds                [0.0/0.1]? Uncertainty in $H$
+                                                band magnitude of the star in
+                                                2MASS.
+262-267   F6.3   mag    Kmag_cds                  [6.1/13.1]? $K_s$ band
+                                                magnitude of the star in 2MASS.
+269-273   F5.3   mag    e_Kmag_cds                [0.0/0.1]? Uncertainty in
+                                                $K_s$ band magnitude of the star
+                                                in 2MASS.
+275-280   F6.3   mag    W1mag_cds                 [6.0/11.9]? $W_1$ band
+                                                magnitude of the star in
+                                                AllWISE.
+282-286   F5.3   mag    e_W1mag_cds               [0.0/0.1]? Uncertainty in
+                                                $W_1$ band magnitude of the star
+                                                in AllWISE.
+288-293   F6.3   mag    W2mag_cds                 [5.8/11.8]? $W_2$ band
+                                                magnitude of the star in
+                                                AllWISE.
+295-299   F5.3   mag    e_W2mag_cds               [0.0/0.1]? Uncertainty in
+                                                $W_2$ band magnitude of the star
+                                                in AllWISE.
+301-306   F6.3   mag    W3mag_cds                 [5.8/11.3]? $W_3$ band
+                                                magnitude of the star in
+                                                AllWISE.
+308-312   F5.3   mag    e_W3mag_cds               [0.0/0.1]? Uncertainty in
+                                                $W_3$ band magnitude of the star
+                                                in AllWISE.
+314-317   I4     ---    model_no                  [0.0/3535.0]? Number of the
+                                                best fitting model in our grid.
+319-336   F18.15 ---    norm                      [45.0/51.0]? Magnitude
+                                                normalisation calculated by the
+                                                code to scale $Z_i$ to $m_{i,
+                                                \text{syn}}$.
+338-360   F23.18 ---    chisq                     [0.0/3248.6]? Goodness of fit
+                                                for the best fitting model.
+362-383   F22.18 ---    reduced_chisq             [0.0/406.1]? Goodness of fit
+                                                per degree of freedom for the
+                                                best fitting model.
+385-405   F21.19 ---    prob                      [0.0/1.0]? The corresponding
+                                                probability of being the best
+                                                fitting model.
+407-428   E22.17 ---    rsqr_on_dsqr              Measured radius squared on
+                                                distance squared of the target.
+430-448   F19.17 solRad radius                    [0.0/1.3]? Our measured radius
+                                                of the target (in units of
+                                                $R_{\odot}$).
+450-466   F17.14 pc     dist                      [9.5/100.0]? Estimated
+                                                distance (in pc) to the target.
+468-484   F17.14 pc     dist_lbound               [9.5/99.7]? Lower bound on the
+                                                confidence interval of the
+                                                estimated distance (in pc).
+486-503   F18.14 pc     dist_ubound               [9.5/100.5]? Upper bound on
+                                                the confidence interval of the
+                                                estimated distance (in pc).
+505-505   I1     ---    nphot                     [8.0]? The number of
+                                                photometric data points used for
+                                                the SED fitting.
+507-512   F6.1   K      Teff                      [2900.0/5100.0]? Our measured
+                                                SED temperature of the target.
+514-516   F3.1   dex Log(g)                    [4.0/5.5]? Our measured surface
+                                                gravity of the target.
+518-522   E5.4   ---    bad_phot                  Flag showing whether source is
+                                                consistent with contaminated
+                                                photometry in Gaia DR2.
+524-528   E5.4   ---    bad_astr                  Flag indicating whether source
+                                                is consistent with contaminated
+                                                astrometry in Gaia DR2.
+530-534   E5.4   ---    bad_teff                  Flag indicating that the
+                                                measured $T_{\rm SED}$ is at a
+                                                grid boundary.
+536-540   E5.4   ---    good                      True if none of
+                                                \textbf{bad\_phot},
+                                                \textbf{bad\_astr} or
+                                                \textbf{bad\_teff} are true for
+                                                the source.
+542-547   F6.1   K      teff_lbound               Lower bound on the confidence
+                                                interval of our measured $T_{\rm
+                                                SED}$.
+549-554   F6.1   K      teff_ubound               Upper bound on the confidence
+                                                interval of our measured $T_{\rm
+                                                SED}$.
+556-567   F12.8  dex logg_lbound               Lower bound on the confidence
+                                                interval of our measured
+                                                $\log(g)$.
+569-580   F12.8  dex logg_ubound               Upper bound on the confidence
+                                                interval of our measured
+                                                $\log(g)$.
+582-594   F13.9  solRad radius_lbound             Lower bound on the confidence
+                                                interval of our measured radius.
+596-608   F13.9  solRad radius_ubound             Upper bound on the confidence
+                                                interval of our measured radius.
+610-624   F15.10 ---    tau_sq_68_contour         Value of $\chi^2$ within which
+                                                68\% of the confidence is
+                                                bounded within the cube.
+626-631   A6     ---    uncer_sample              Sample for which the
+                                                uncertainties correspond. For
+                                                this publication, it will be
+                                                'random'.
+633-655   F23.19 ---    d08_inflation             [-44.8/50.3]? Radius inflation
+                                                (in \%) from the
+                                                \citet{Dotter:2008aa} 4Gyr solar
+                                                metallicity isochrone.
+657-680   E24.17 solRad d08_lum_corr_radius       Radius residual when corrected
+                                                for our luminosity - radius
+                                                relation.
+682-703   F22.18 solLum lum                       Luminosity measured for the
+                                                source when correcting the
+                                                radius for metallicity.
+705-725   F21.17 solRad corrected_radius          Radius of the star when
+                                                corrected for the effects of
+                                                metallicity.
+727-747   F21.17 solRad corrected_radius_lbound   Lower bound on the confidence
+                                                interval of our metallicity
+                                                corrected radius.
+749-769   F21.17 solRad corrected_radius_ubound   Upper bound on the confidence
+                                                interval of our metallicity
+                                                corrected radius.
+771-777   F7.2   dex fe_h                      Measured metallicity of the
+                                                target.
+779-797   A19    ---    fe_h_bibcode              The bibcode corresponding to
+                                                the source of the metallicity
+                                                measurement.
+799-822   F24.19 solRad rad_corr                  The correction applied to our
+                                                measured radius to correct for
+                                                metallicity, measured in
+                                                $R_\odot$.
+
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: tsed-r-relation.dat
+--------------------------------------------------------------------------------
+ Bytes Format Units  Label     Explanations
+--------------------------------------------------------------------------------
+ 1- 4   I4     K      tsed          [3000.0/4400.0]? SED temperature of the
+                                  source.
+ 6-24   F19.17 solRad radius        [0.2/0.7]? Radius prescribed by the relation
+                                  at tempertature T_SED.
+26-44   F19.17 solRad radius_lbound [0.2/0.6]? Lower bound radius prescribed by
+                                  the relation at tempertature T_SED.
+46-64   F19.17 solRad radius_ubound [0.3/0.7]? Upper bound radius prescribed by
+                                  the relation at tempertature T_SED.
+
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: lsed-r-relation.dat
+--------------------------------------------------------------------------------
+ Bytes Format Units  Label     Explanations
+--------------------------------------------------------------------------------
+  1- 20   F20.18 solLum lsed                     [0.0/0.1]? Luminosity of the
+                                               source from a SED fit.
+ 22- 41   F20.18 solRad radius_correction        [0.0/0.0]? Radius correction to
+                                               the D08 4Gyr isochrone at
+                                               luminosity L_SED.
+ 43- 61   F19.17 solRad radius_correction_lbound [0.2/0.6]? Description
+ 63- 81   F19.17 solRad radius_correction_ubound [0.2/0.7]? Description
+ 83-101   F19.17 solRad radius                   [0.2/0.6]? Radius prescribed by
+                                               the relation at luminosity L_SED.
+103-121   F19.17 solRad radius_lbound            [0.2/0.6]? Lower bound radius
+                                               prescribed by the relation at
+                                               luminosity L_SED.
+123-141   F19.17 solRad radius_ubound            [0.2/0.7]? Upper bound radius
+                                               prescribed by the relation at
+                                               luminosity L_SED.
+
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table3-tabulated-feh-corrections.dat
+--------------------------------------------------------------------------------
+ Bytes Format Units  Label     Explanations
+--------------------------------------------------------------------------------
+ 1-21   F21.19 solLum lum     [0.0/0.1]? Luminosity of the source from a SED
+                            fit.
+23-43   F21.18 ---    f_lum   [-0.1/-0.0]? Gradient of F(L_SED) at the given
+                            luminosity L_SED.
+
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: mdwarf-properties.fits
+--------------------------------------------------------------------------------
+ Bytes Format Units  Label     Explanations
+--------------------------------------------------------------------------------
+  1-  5   I5     ---    id                        [1.0/15765.0]? Internal
+                                                identifier for the object within
+                                                our catalogue.
+  7- 28   F22.18 deg    ra                        [0.0/360.0]? Right ascension
+                                                of the source as given in the
+                                                Gaia DR2 catalogue.
+ 30- 52   F23.19 deg    dec                       [-89.7/88.7]? Declination of
+                                                the source as given in the Gaia
+                                                DR2 catalogue.
+ 54- 72   I19    ---    source_id                 Unique source indentifier of
+                                                the star within Gaia DR2.
+ 74- 83   F10.7  mag    phot_g_mean_mag           [9.0/18.1]? G-band mean
+                                                magnitude of the star in the
+                                                Gaia DR2 catalogue.
+ 85- 94   F10.7  mag    phot_bp_mean_mag          [9.9/20.7]? Integrated BP mean
+                                                magnitude of the star in the
+                                                Gaia DR2 catalogue.
+ 96-105   F10.7  mag    phot_rp_mean_mag          [8.2/16.4]? Integrated RP mean
+                                                magnitude of the star in the
+                                                Gaia DR2 catalogue.
+107-127   F21.19 mag    phot_bp_mean_mag_err      [0.0/0.3]? Uncertainty of the
+                                                BP mean magnitude of the star in
+                                                the Gaia DR2 catalogue.
+129-150   F22.20 mag    phot_rp_mean_mag_err      [0.0/0.2]? Uncertainty of the
+                                                RP mean magnitude of the star in
+                                                the Gaia DR2 catalogue.
+152-173   F22.14 'electron'.s**-1 phot_bp_mean_flux         [70.8/1558645.7]?
+                                                Integrated BP mean flux of the
+                                                star in the Gaia DR2 catalogue.
+175-195   F21.13 'electron'.s**-1 phot_rp_mean_flux         [2151.7/4289144.1]?
+                                                Integrated RP mean flux of the
+                                                star in the Gaia DR2 catalogue.
+197-217   F21.13 'electron'.s**-1 phot_g_mean_flux          [1119.5/4568808.6]?
+                                                G-band mean flux of the star in
+                                                the Gaia DR2 catalogue.
+219-230   F12.6  ---    astrometric_chi2_al       [56.3/24146.0]? Astrometric
+                                                goodness of fit in the Gaia DR2
+                                                catalogue.
+232-234   I3     ---    astrometric_n_good_obs_al [66.0/916.0]? No. CCD transits
+                                                not downweighted in the
+                                                astrometric solution in the Gaia
+                                                DR2 Catalogue.
+236-241   F6.3   mag    Jmag_cds                  [6.9/13.9]? $J$ band magnitude
+                                                of the star in 2MASS.
+243-247   F5.3   mag    e_Jmag_cds                [0.0/0.1]? Uncertainty in $J$
+                                                band magnitude of the star in
+                                                2MASS.
+249-254   F6.3   mag    Hmag_cds                  [6.3/13.4]? $H$ band magnitude
+                                                of the star in 2MASS.
+256-260   F5.3   mag    e_Hmag_cds                [0.0/0.1]? Uncertainty in $H$
+                                                band magnitude of the star in
+                                                2MASS.
+262-267   F6.3   mag    Kmag_cds                  [6.1/13.1]? $K_s$ band
+                                                magnitude of the star in 2MASS.
+269-273   F5.3   mag    e_Kmag_cds                [0.0/0.1]? Uncertainty in
+                                                $K_s$ band magnitude of the star
+                                                in 2MASS.
+275-280   F6.3   mag    W1mag_cds                 [6.0/11.9]? $W_1$ band
+                                                magnitude of the star in
+                                                AllWISE.
+282-286   F5.3   mag    e_W1mag_cds               [0.0/0.1]? Uncertainty in
+                                                $W_1$ band magnitude of the star
+                                                in AllWISE.
+288-293   F6.3   mag    W2mag_cds                 [5.8/11.8]? $W_2$ band
+                                                magnitude of the star in
+                                                AllWISE.
+295-299   F5.3   mag    e_W2mag_cds               [0.0/0.1]? Uncertainty in
+                                                $W_2$ band magnitude of the star
+                                                in AllWISE.
+301-306   F6.3   mag    W3mag_cds                 [5.8/11.3]? $W_3$ band
+                                                magnitude of the star in
+                                                AllWISE.
+308-312   F5.3   mag    e_W3mag_cds               [0.0/0.1]? Uncertainty in
+                                                $W_3$ band magnitude of the star
+                                                in AllWISE.
+314-317   I4     ---    model_no                  [0.0/3535.0]? Number of the
+                                                best fitting model in our grid.
+319-336   F18.15 ---    norm                      [45.0/51.0]? Magnitude
+                                                normalisation calculated by the
+                                                code to scale $Z_i$ to $m_{i,
+                                                \text{syn}}$.
+338-360   F23.18 ---    chisq                     [0.0/3248.6]? Goodness of fit
+                                                for the best fitting model.
+362-383   F22.18 ---    reduced_chisq             [0.0/406.1]? Goodness of fit
+                                                per degree of freedom for the
+                                                best fitting model.
+385-405   F21.19 ---    prob                      [0.0/1.0]? The corresponding
+                                                probability of being the best
+                                                fitting model.
+407-428   E22.17 ---    rsqr_on_dsqr              Measured radius squared on
+                                                distance squared of the target.
+430-448   F19.17 solRad radius                    [0.0/1.3]? Our measured radius
+                                                of the target (in units of
+                                                $R_{\odot}$).
+450-466   F17.14 pc     dist                      [9.5/100.0]? Estimated
+                                                distance (in pc) to the target.
+468-484   F17.14 pc     dist_lbound               [9.5/99.7]? Lower bound on the
+                                                confidence interval of the
+                                                estimated distance (in pc).
+486-503   F18.14 pc     dist_ubound               [9.5/100.5]? Upper bound on
+                                                the confidence interval of the
+                                                estimated distance (in pc).
+505-505   I1     ---    nphot                     [8.0]? The number of
+                                                photometric data points used for
+                                                the SED fitting.
+507-512   F6.1   K      Teff                      [2900.0/5100.0]? Our measured
+                                                SED temperature of the target.
+514-516   F3.1   dex Log(g)                    [4.0/5.5]? Our measured surface
+                                                gravity of the target.
+518-522   E5.4   ---    bad_phot                  Flag showing whether source is
+                                                consistent with contaminated
+                                                photometry in Gaia DR2.
+524-528   E5.4   ---    bad_astr                  Flag indicating whether source
+                                                is consistent with contaminated
+                                                astrometry in Gaia DR2.
+530-534   E5.4   ---    bad_teff                  Flag indicating that the
+                                                measured $T_{\rm SED}$ is at a
+                                                grid boundary.
+536-540   E5.4   ---    good                      True if none of
+                                                \textbf{bad\_phot},
+                                                \textbf{bad\_astr} or
+                                                \textbf{bad\_teff} are true for
+                                                the source.
+542-547   F6.1   K      teff_lbound               Lower bound on the confidence
+                                                interval of our measured $T_{\rm
+                                                SED}$.
+549-554   F6.1   K      teff_ubound               Upper bound on the confidence
+                                                interval of our measured $T_{\rm
+                                                SED}$.
+556-567   F12.8  dex logg_lbound               Lower bound on the confidence
+                                                interval of our measured
+                                                $\log(g)$.
+569-580   F12.8  dex logg_ubound               Upper bound on the confidence
+                                                interval of our measured
+                                                $\log(g)$.
+582-594   F13.9  solRad radius_lbound             Lower bound on the confidence
+                                                interval of our measured radius.
+596-608   F13.9  solRad radius_ubound             Upper bound on the confidence
+                                                interval of our measured radius.
+610-624   F15.10 ---    tau_sq_68_contour         Value of $\chi^2$ within which
+                                                68\% of the confidence is
+                                                bounded within the cube.
+626-631   A6     ---    uncer_sample              Sample for which the
+                                                uncertainties correspond. For
+                                                this publication, it will be
+                                                'random'.
+633-655   F23.19 ---    d08_inflation             [-44.8/50.3]? Radius inflation
+                                                (in \%) from the
+                                                \citet{Dotter:2008aa} 4Gyr solar
+                                                metallicity isochrone.
+657-680   E24.17 solRad d08_lum_corr_radius       Radius residual when corrected
+                                                for our luminosity - radius
+                                                relation.
+682-703   F22.18 solLum lum                       Luminosity measured for the
+                                                source when correcting the
+                                                radius for metallicity.
+705-725   F21.17 solRad corrected_radius          Radius of the star when
+                                                corrected for the effects of
+                                                metallicity.
+727-747   F21.17 solRad corrected_radius_lbound   Lower bound on the confidence
+                                                interval of our metallicity
+                                                corrected radius.
+749-769   F21.17 solRad corrected_radius_ubound   Upper bound on the confidence
+                                                interval of our metallicity
+                                                corrected radius.
+771-777   F7.2   dex fe_h                      Measured metallicity of the
+                                                target.
+779-797   A19    ---    fe_h_bibcode              The bibcode corresponding to
+                                                the source of the metallicity
+                                                measurement.
+799-822   F24.19 solRad rad_corr                  The correction applied to our
+                                                measured radius to correct for
+                                                metallicity, measured in
+                                                $R_\odot$.
+
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: tsed-r-relation.fits
+--------------------------------------------------------------------------------
+ Bytes Format Units  Label     Explanations
+--------------------------------------------------------------------------------
+ 1- 4   I4     K      tsed          [3000.0/4400.0]? SED temperature of the
+                                  source.
+ 6-24   F19.17 solRad radius        [0.2/0.7]? Radius prescribed by the relation
+                                  at tempertature T_SED.
+26-44   F19.17 solRad radius_lbound [0.2/0.6]? Lower bound radius prescribed by
+                                  the relation at tempertature T_SED.
+46-64   F19.17 solRad radius_ubound [0.3/0.7]? Upper bound radius prescribed by
+                                  the relation at tempertature T_SED.
+
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: lsed-r-relation.fits
+--------------------------------------------------------------------------------
+ Bytes Format Units  Label     Explanations
+--------------------------------------------------------------------------------
+  1- 20   F20.18 solLum lsed                     [0.0/0.1]? Luminosity of the
+                                               source from a SED fit.
+ 22- 41   F20.18 solRad radius_correction        [0.0/0.0]? Radius correction to
+                                               the D08 4Gyr isochrone at
+                                               luminosity L_SED.
+ 43- 61   F19.17 solRad radius_correction_lbound [0.2/0.6]? Description
+ 63- 81   F19.17 solRad radius_correction_ubound [0.2/0.7]? Description
+ 83-101   F19.17 solRad radius                   [0.2/0.6]? Radius prescribed by
+                                               the relation at luminosity L_SED.
+103-121   F19.17 solRad radius_lbound            [0.2/0.6]? Lower bound radius
+                                               prescribed by the relation at
+                                               luminosity L_SED.
+123-141   F19.17 solRad radius_ubound            [0.2/0.7]? Upper bound radius
+                                               prescribed by the relation at
+                                               luminosity L_SED.
+
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table3-tabulated-feh-corrections.fits
+--------------------------------------------------------------------------------
+ Bytes Format Units  Label     Explanations
+--------------------------------------------------------------------------------
+ 1-21   F21.19 solLum lum     [0.0/0.1]? Luminosity of the source from a SED
+                            fit.
+23-43   F21.18 ---    f_lum   [-0.1/-0.0]? Gradient of F(L_SED) at the given
+                            luminosity L_SED.
+
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+

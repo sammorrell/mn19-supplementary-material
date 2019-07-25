@@ -1,0 +1,77 @@
+
+Name:    Joined
+Columns: 60
+Rows:    15765
+
+Parameters
+----------
+CONTINUE:
+DATE-HDU:
+    2019-07-25T11:30:06
+STILVERS:
+    3.3-1
+STILCLAS:
+    uk.ac.starlink.votable.FitsPlusTableWriter
+
+Columns
+-------
+     1: id(Long) - Internal identifier for the object within our catalogue.
+     2: ra(Double)/deg - Right ascension of the source as given in the Gaia DR2 catalogue.
+     3: dec(Double)/deg - Declination of the source as given in the Gaia DR2 catalogue.
+     4: source_id(Long) - Unique source indentifier of the star within Gaia DR2.
+     5: phot_g_mean_mag(Float)/mag - G-band mean magnitude of the star in the Gaia DR2 catalogue.
+     6: phot_bp_mean_mag(Float)/mag - Integrated BP mean magnitude of the star in the Gaia DR2 catalogue.
+     7: phot_rp_mean_mag(Float)/mag - Integrated RP mean magnitude of the star in the Gaia DR2 catalogue.
+     8: phot_bp_mean_mag_err(Double)/mag - Uncertainty of the BP mean magnitude of the star in the Gaia DR2 &
+     9: phot_rp_mean_mag_err(Double)/mag - Uncertainty of the RP mean magnitude of the star in the Gaia DR2 &
+    10: phot_bp_mean_flux(Double)/'electron'.s**-1 - Integrated BP mean flux of the star in the Gaia DR2 catalogue.
+    11: phot_rp_mean_flux(Double)/'electron'.s**-1 - Integrated RP mean flux of the star in the Gaia DR2 catalogue.
+    12: phot_g_mean_flux(Double)/'electron'.s**-1 - G-band mean flux of the star in the Gaia DR2 catalogue.
+    13: astrometric_chi2_al(Float) - Astrometric goodness of fit in the Gaia DR2 catalogue.
+    14: astrometric_n_good_obs_al(Integer) - No. CCD transits not downweighted in the astrometric solution in &
+    15: Jmag_cds(Float)/mag - $J$ band magnitude of the star in 2MASS.
+    16: e_Jmag_cds(Float)/mag - Uncertainty in $J$ band magnitude of the star in 2MASS.
+    17: Hmag_cds(Float)/mag - $H$ band magnitude of the star in 2MASS.
+    18: e_Hmag_cds(Float)/mag - Uncertainty in $H$ band magnitude of the star in 2MASS.
+    19: Kmag_cds(Float)/mag - $K_s$ band magnitude of the star in 2MASS.
+    20: e_Kmag_cds(Float)/mag - Uncertainty in $K_s$ band magnitude of the star in 2MASS.
+    21: W1mag_cds(Float)/mag - $W_1$ band magnitude of the star in AllWISE.
+    22: e_W1mag_cds(Float)/mag - Uncertainty in $W_1$ band magnitude of the star in AllWISE.
+    23: W2mag_cds(Float)/mag - $W_2$ band magnitude of the star in AllWISE.
+    24: e_W2mag_cds(Float)/mag - Uncertainty in $W_2$ band magnitude of the star in AllWISE.
+    25: W3mag_cds(Float)/mag - $W_3$ band magnitude of the star in AllWISE.
+    26: e_W3mag_cds(Float)/mag - Uncertainty in $W_3$ band magnitude of the star in AllWISE.
+    27: model_no(Short) - Number of the best fitting model in our grid.
+    28: norm(Double) - Magnitude normalisation calculated by the code to scale $Z_i$ to &
+    29: chisq(Double) - Goodness of fit for the best fitting model.
+    30: reduced_chisq(Double) - Goodness of fit per degree of freedom for the best fitting model.
+    31: prob(Double) - The corresponding probability of being the best fitting model.
+    32: rsqr_on_dsqr(Double) - Measured radius squared on distance squared of the target.
+    33: radius(Double)/solRad - Our measured radius of the target (in units of $R_{\odot}$).
+    34: dist(Double)/pc - Estimated distance (in pc) to the target.
+    35: dist_lbound(Double)/pc - Lower bound on the confidence interval of the estimated distance &
+    36: dist_ubound(Double)/pc - Upper bound on the confidence interval of the estimated distance &
+    37: nphot(Short) - The number of photometric data points used for the SED fitting.
+    38: Teff(Float)/K - Our measured SED temperature of the target.
+    39: Log(g)(Float)/dex - Our measured surface gravity of the target.
+    40: bad_phot(Boolean) - Flag showing whether source is consistent with contaminated &
+    41: bad_astr(Boolean) - Flag indicating whether source is consistent with contaminated &
+    42: bad_teff(Boolean) - Flag indicating that the measured $T_{\rm SED}$ is at a grid &
+    43: good(Boolean) - True if none of \textbf{bad\_phot}, \textbf{bad\_astr} or &
+    44: teff_lbound(Double)/K - Lower bound on the confidence interval of our measured $T_{\rm &
+    45: teff_ubound(Double)/K - Upper bound on the confidence interval of our measured $T_{\rm &
+    46: logg_lbound(Double)/dex - Lower bound on the confidence interval of our measured $\log(g)$.
+    47: logg_ubound(Double)/dex - Upper bound on the confidence interval of our measured $\log(g)$.
+    48: radius_lbound(Double)/solRad - Lower bound on the confidence interval of our measured radius.
+    49: radius_ubound(Double)/solRad - Upper bound on the confidence interval of our measured radius.
+    50: tau_sq_68_contour(Double) - Value of $\chi^2$ within which 68\% of the confidence is bounded &
+    51: uncer_sample(String) - Sample for which the uncertainties correspond. For this &
+    52: d08_inflation(Double) - Radius inflation (in \%) from the \citet{Dotter:2008aa} 4Gyr solar &
+    53: d08_lum_corr_radius(Double)/solRad - Radius residual when corrected for our luminosity - radius &
+    54: lum(Double)/solLum - Luminosity measured for the source when correcting the radius for &
+    55: corrected_radius(Double)/solRad - Radius of the star when corrected for the effects of metallicity.
+    56: corrected_radius_lbound(Double)/solRad - Lower bound on the confidence interval of our metallicity &
+    57: corrected_radius_ubound(Double)/solRad - Upper bound on the confidence interval of our metallicity &
+    58: fe_h(Double)/dex - Measured metallicity of the target.
+    59: fe_h_bibcode(String) - The bibcode corresponding to the source of the metallicity &
+    60: rad_corr(Double)/solRad - The correction applied to our measured radius to correct for &
