@@ -33,11 +33,11 @@ File Summary:
 ReadMe                                 80        .  this file
 mdwarf-properties.dat                 822    15765  Input data and fitted properties for stars in our sample. 
 tsed-r-relation.dat                    64     1401  A tabulated form of our T_SED - R relation for M-dwarf stars. 
-lsed-r-relation.dat                   141       98  A tabulated form of our L_SED - R relation for M-dwarf stars. 
+lsed-r-relation.dat                   146       98  A tabulated form of our L_SED - R relation for M-dwarf stars. 
 table3-tabulated-feh-corrections.dat   43       97  A electronic version of Table 3, which are the tabulated values of F(L_SED) in equation 16. 
 mdwarf-properties.fits                822    15765  A FITS version of our main catalogue. 
 tsed-r-relation.fits                   64     1401  A FITS version of our tabulated T_SED - R relation. 
-lsed-r-relation.fits                  141       98  A FITS version of our tabulated L_SED - R relation. 
+lsed-r-relation.fits                  146       98  A FITS version of our tabulated L_SED - R relation. 
 table3-tabulated-feh-corrections.fits  43       97  A FITS version of our tabulated values of F(L_SED). 
 
 
@@ -263,14 +263,14 @@ Byte-by-byte Description of file: lsed-r-relation.dat
  22- 41   F20.18 solRad radius_correction        [0.0/0.0]? Radius correction to
                                                the D08 4Gyr isochrone at
                                                luminosity L_SED.
- 43- 61   F19.17 solRad radius_correction_lbound [0.2/0.6]? Description
- 63- 81   F19.17 solRad radius_correction_ubound [0.2/0.7]? Description
- 83-101   F19.17 solRad radius                   [0.2/0.6]? Radius prescribed by
+ 43- 65   F23.20 solRad radius_correction_lbound [-0.0/0.0]? Description
+ 67- 86   F20.18 solRad radius_correction_ubound [0.0/0.1]? Description
+ 88-106   F19.17 solRad radius                   [0.2/0.6]? Radius prescribed by
                                                the relation at luminosity L_SED.
-103-121   F19.17 solRad radius_lbound            [0.2/0.6]? Lower bound radius
+108-126   F19.17 solRad radius_lbound            [0.2/0.6]? Lower bound radius
                                                prescribed by the relation at
                                                luminosity L_SED.
-123-141   F19.17 solRad radius_ubound            [0.2/0.7]? Upper bound radius
+128-146   F19.17 solRad radius_ubound            [0.2/0.7]? Upper bound radius
                                                prescribed by the relation at
                                                luminosity L_SED.
 
@@ -492,14 +492,14 @@ Byte-by-byte Description of file: lsed-r-relation.fits
  22- 41   F20.18 solRad radius_correction        [0.0/0.0]? Radius correction to
                                                the D08 4Gyr isochrone at
                                                luminosity L_SED.
- 43- 61   F19.17 solRad radius_correction_lbound [0.2/0.6]? Description
- 63- 81   F19.17 solRad radius_correction_ubound [0.2/0.7]? Description
- 83-101   F19.17 solRad radius                   [0.2/0.6]? Radius prescribed by
+ 43- 65   F23.20 solRad radius_correction_lbound [-0.0/0.0]? Description
+ 67- 86   F20.18 solRad radius_correction_ubound [0.0/0.1]? Description
+ 88-106   F19.17 solRad radius                   [0.2/0.6]? Radius prescribed by
                                                the relation at luminosity L_SED.
-103-121   F19.17 solRad radius_lbound            [0.2/0.6]? Lower bound radius
+108-126   F19.17 solRad radius_lbound            [0.2/0.6]? Lower bound radius
                                                prescribed by the relation at
                                                luminosity L_SED.
-123-141   F19.17 solRad radius_ubound            [0.2/0.7]? Upper bound radius
+128-146   F19.17 solRad radius_ubound            [0.2/0.7]? Upper bound radius
                                                prescribed by the relation at
                                                luminosity L_SED.
 
