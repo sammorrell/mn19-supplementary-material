@@ -30,15 +30,15 @@ File Summary:
 --------------------------------------------------------------------------------
  FileName    Lrecl   Records    Explanations
 --------------------------------------------------------------------------------
-ReadMe                                 80        .  this file
-mdwarf-properties.dat                 822    15765  Input data and fitted properties for stars in our sample. 
-tsed-r-relation.dat                    64     1401  A tabulated form of our T_SED - R relation for M-dwarf stars. 
-lsed-r-relation.dat                   146       98  A tabulated form of our L_SED - R relation for M-dwarf stars. 
-table3-tabulated-feh-corrections.dat   43       97  A electronic version of Table 3, which are the tabulated values of F(L_SED) in equation 16. 
-mdwarf-properties.fits                822    15765  A FITS version of our main catalogue. 
-tsed-r-relation.fits                   64     1401  A FITS version of our tabulated T_SED - R relation. 
-lsed-r-relation.fits                  146       98  A FITS version of our tabulated L_SED - R relation. 
-table3-tabulated-feh-corrections.fits  43       97  A FITS version of our tabulated values of F(L_SED). 
+ReadMe                       80        .  this file
+mdwarf-properties.dat       822    15765  Input data and fitted properties for stars in our sample. 
+table3-tsed-r-relation.dat   64     1401  A tabulated form of our T_SED - R relation for M-dwarf stars. 
+table4-lsed-r-relation.dat  146       98  A tabulated form of our L_SED - R relation for M-dwarf stars. 
+table5-tabulated-flsed.dat   43       97  A electronic version of Table 3, which are the tabulated values of F(L_SED) in equation 16. 
+mdwarf-properties.fits      822    15765  A FITS version of our main catalogue. 
+table3-tsed-r-relation.fits  64     1401  A FITS version of our tabulated T_SED - R relation. 
+table4-lsed-r-relation.fits 146       98  A FITS version of our tabulated L_SED - R relation. 
+table5-tabulated-flsed.fits  43       97  A FITS version of our tabulated values of F(L_SED). 
 
 
 See also:
@@ -239,7 +239,7 @@ Byte-by-byte Description of file: mdwarf-properties.dat
 
 --------------------------------------------------------------------------------
 
-Byte-by-byte Description of file: tsed-r-relation.dat
+Byte-by-byte Description of file: table3-tsed-r-relation.dat
 --------------------------------------------------------------------------------
  Bytes Format Units  Label     Explanations
 --------------------------------------------------------------------------------
@@ -254,7 +254,7 @@ Byte-by-byte Description of file: tsed-r-relation.dat
 
 --------------------------------------------------------------------------------
 
-Byte-by-byte Description of file: lsed-r-relation.dat
+Byte-by-byte Description of file: table4-lsed-r-relation.dat
 --------------------------------------------------------------------------------
  Bytes Format Units  Label     Explanations
 --------------------------------------------------------------------------------
@@ -276,7 +276,7 @@ Byte-by-byte Description of file: lsed-r-relation.dat
 
 --------------------------------------------------------------------------------
 
-Byte-by-byte Description of file: table3-tabulated-feh-corrections.dat
+Byte-by-byte Description of file: table5-tabulated-flsed.dat
 --------------------------------------------------------------------------------
  Bytes Format Units  Label     Explanations
 --------------------------------------------------------------------------------
@@ -468,7 +468,7 @@ Byte-by-byte Description of file: mdwarf-properties.fits
 
 --------------------------------------------------------------------------------
 
-Byte-by-byte Description of file: tsed-r-relation.fits
+Byte-by-byte Description of file: table3-tsed-r-relation.fits
 --------------------------------------------------------------------------------
  Bytes Format Units  Label     Explanations
 --------------------------------------------------------------------------------
@@ -483,7 +483,7 @@ Byte-by-byte Description of file: tsed-r-relation.fits
 
 --------------------------------------------------------------------------------
 
-Byte-by-byte Description of file: lsed-r-relation.fits
+Byte-by-byte Description of file: table4-lsed-r-relation.fits
 --------------------------------------------------------------------------------
  Bytes Format Units  Label     Explanations
 --------------------------------------------------------------------------------
@@ -505,7 +505,7 @@ Byte-by-byte Description of file: lsed-r-relation.fits
 
 --------------------------------------------------------------------------------
 
-Byte-by-byte Description of file: table3-tabulated-feh-corrections.fits
+Byte-by-byte Description of file: table5-tabulated-flsed.fits
 --------------------------------------------------------------------------------
  Bytes Format Units  Label     Explanations
 --------------------------------------------------------------------------------
