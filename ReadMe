@@ -34,7 +34,7 @@ ReadMe                       80        .  this file
 mdwarf-properties.dat       822    15765  Input data and fitted properties for stars in our sample. 
 table3-tsed-r-relation.dat   64     1401  A tabulated form of our T_SED - R relation for M-dwarf stars. 
 table4-lsed-r-relation.dat  146       98  A tabulated form of our L_SED - R relation for M-dwarf stars. 
-table5-tabulated-flsed.dat   43       97  A electronic version of Table 3, which are the tabulated values of F(L_SED) in equation 16. 
+table5-tabulated-flsed.dat   43       97  An electronic version of Table 3, which contains the tabulated values of F(L_SED) in equation 16. 
 mdwarf-properties.fits      822    15765  A FITS version of our main catalogue. 
 table3-tsed-r-relation.fits  64     1401  A FITS version of our tabulated T_SED - R relation. 
 table4-lsed-r-relation.fits 146       98  A FITS version of our tabulated L_SED - R relation. 
