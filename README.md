@@ -1,5 +1,4 @@
-# Supplementary Material for **Exploring the M-dwarf Luminosity - Temperature - Radius
-Relationships using Gaia DR2**
+# Supplementary Material for **Exploring the M-dwarf Luminosity - Temperature - Radius Relationships using Gaia DR2**
 
 Sam Morrell and Tim Naylor (2019) - Accepted for publication in MNRAS 03 August 2019.
 
