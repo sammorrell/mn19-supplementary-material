@@ -2,9 +2,11 @@
 
 Sam Morrell and Tim Naylor (2019) - Accepted for publication in MNRAS 03 August 2019.
 
-**Paper**: Coming Soon
+**Paper**: https://academic.oup.com/mnras/article/489/2/2615/5549528
 
 **ArXiv**: https://arxiv.org/abs/1908.03025
+
+**ADS**: https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.2615M/abstract
 
 ----
 
@@ -20,3 +22,11 @@ All of these files are provided in FITS, ASCII and CDS format for convenience. W
 We also include the polynomial coefficients used for the $T_{\rm SED} - R$ relation and $L_{\rm SED} - R$ correction in **tsed-r-coeffs.json** and **dotter08-lsed-r-coeffs.json** respectively. Each JSON file contains the relation / correction in the **med** property of the root object, with the coefficients for the upper and lower bounds being given in the **lbound** and **ubound** properties. These are lists of coefficients that can be directly read into *numpy.poly1d*.  
 
 We also provide **mn19.py** which includes a Python 3 module for easily working with the provided coefficients.
+
+----
+
+For your convenience, these catalogues are also available on:
+
+**CDS**: https://cdsarc.unistra.fr/viz-bin/cat/VI/156
+
+**Open Research Exeter Repository**: https://ore.exeter.ac.uk/repository/handle/10871/38279
