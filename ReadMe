@@ -139,100 +139,100 @@ Byte-by-byte Description of file: mdwarf-properties.dat
                                                 in AllWISE.
 314-317   I4     ---    model_no                  [0.0/3535.0]? Number of the
                                                 best fitting model in our grid.
-319-336   F18.15 ---    norm                      [45.0/51.0]? Magnitude
+319-336   F18.15 ---    norm                      [45.0/50.9]? Magnitude
                                                 normalisation calculated by the
                                                 code to scale $Z_i$ to $m_{i,
                                                 \text{syn}}$.
-338-360   F23.18 ---    chisq                     [0.0/3248.6]? Goodness of fit
+338-359   F22.17 ---    chisq                     [0.1/3255.5]? Goodness of fit
                                                 for the best fitting model.
-362-383   F22.18 ---    reduced_chisq             [0.0/406.1]? Goodness of fit
+361-382   F22.18 ---    reduced_chisq             [0.0/406.9]? Goodness of fit
                                                 per degree of freedom for the
                                                 best fitting model.
-385-405   F21.19 ---    prob                      [0.0/1.0]? The corresponding
+384-404   F21.19 ---    prob                      [0.0/1.0]? The corresponding
                                                 probability of being the best
                                                 fitting model.
-407-428   E22.17 ---    rsqr_on_dsqr              Measured radius squared on
+406-427   E22.17 ---    rsqr_on_dsqr              Measured radius squared on
                                                 distance squared of the target.
-430-448   F19.17 solRad radius                    [0.0/1.3]? Our measured radius
+429-447   F19.17 solRad radius                    [0.0/1.3]? Our measured radius
                                                 of the target (in units of
                                                 $R_{\odot}$).
-450-466   F17.14 pc     dist                      [9.5/100.0]? Estimated
+449-465   F17.14 pc     dist                      [9.5/100.0]? Estimated
                                                 distance (in pc) to the target.
-468-484   F17.14 pc     dist_lbound               [9.5/99.7]? Lower bound on the
+467-483   F17.14 pc     dist_lbound               [9.5/99.7]? Lower bound on the
                                                 confidence interval of the
                                                 estimated distance (in pc).
-486-503   F18.14 pc     dist_ubound               [9.5/100.5]? Upper bound on
+485-502   F18.14 pc     dist_ubound               [9.5/100.5]? Upper bound on
                                                 the confidence interval of the
                                                 estimated distance (in pc).
-505-505   I1     ---    nphot                     [8.0]? The number of
+504-504   I1     ---    nphot                     [8.0]? The number of
                                                 photometric data points used for
                                                 the SED fitting.
-507-512   F6.1   K      Teff                      [2900.0/5100.0]? Our measured
+506-511   F6.1   K      Teff                      [2900.0/5100.0]? Our measured
                                                 SED temperature of the target.
-514-516   F3.1   dex Log(g)                    [4.0/5.5]? Our measured surface
+513-515   F3.1   dex Log(g)                    [4.0/5.5]? Our measured surface
                                                 gravity of the target.
-518-522   E5.4   ---    bad_phot                  Flag showing whether source is
+517-521   E5.4   ---    bad_phot                  Flag showing whether source is
                                                 consistent with contaminated
                                                 photometry in Gaia DR2.
-524-528   E5.4   ---    bad_astr                  Flag indicating whether source
+523-527   E5.4   ---    bad_astr                  Flag indicating whether source
                                                 is consistent with contaminated
                                                 astrometry in Gaia DR2.
-530-534   E5.4   ---    bad_teff                  Flag indicating that the
+529-533   E5.4   ---    bad_teff                  Flag indicating that the
                                                 measured $T_{\rm SED}$ is at a
                                                 grid boundary.
-536-540   E5.4   ---    good                      True if none of
+535-539   E5.4   ---    good                      True if none of
                                                 \textbf{bad\_phot},
                                                 \textbf{bad\_astr} or
                                                 \textbf{bad\_teff} are true for
                                                 the source.
-542-547   F6.1   K      teff_lbound               Lower bound on the confidence
+541-546   F6.1   K      teff_lbound               Lower bound on the confidence
                                                 interval of our measured $T_{\rm
                                                 SED}$.
-549-554   F6.1   K      teff_ubound               Upper bound on the confidence
+548-553   F6.1   K      teff_ubound               Upper bound on the confidence
                                                 interval of our measured $T_{\rm
                                                 SED}$.
-556-567   F12.8  dex logg_lbound               Lower bound on the confidence
+555-566   F12.8  dex logg_lbound               Lower bound on the confidence
                                                 interval of our measured
                                                 $\log(g)$.
-569-580   F12.8  dex logg_ubound               Upper bound on the confidence
+568-579   F12.8  dex logg_ubound               Upper bound on the confidence
                                                 interval of our measured
                                                 $\log(g)$.
-582-594   F13.9  solRad radius_lbound             Lower bound on the confidence
+581-593   F13.9  solRad radius_lbound             Lower bound on the confidence
                                                 interval of our measured radius.
-596-608   F13.9  solRad radius_ubound             Upper bound on the confidence
+595-607   F13.9  solRad radius_ubound             Upper bound on the confidence
                                                 interval of our measured radius.
-610-624   F15.10 ---    tau_sq_68_contour         Value of $\chi^2$ within which
+609-623   F15.10 ---    tau_sq_68_contour         Value of $\chi^2$ within which
                                                 68\% of the confidence is
                                                 bounded within the cube.
-626-631   A6     ---    uncer_sample              Sample for which the
+625-630   A6     ---    uncer_sample              Sample for which the
                                                 uncertainties correspond. For
                                                 this publication, it will be
                                                 'random'.
-633-655   F23.19 ---    d08_inflation             [-44.8/50.3]? Radius inflation
+632-654   F23.19 ---    d08_inflation             [-44.8/50.3]? Radius inflation
                                                 (in \%) from the
                                                 \citet{Dotter:2008aa} 4Gyr solar
                                                 metallicity isochrone.
-657-680   E24.17 solRad d08_lum_corr_radius       Radius residual when corrected
+656-679   E24.17 solRad d08_lum_corr_radius       Radius residual when corrected
                                                 for our luminosity - radius
                                                 relation.
-682-703   F22.18 solLum lum                       Luminosity measured for the
+681-702   F22.18 solLum lum                       Luminosity measured for the
                                                 source when correcting the
                                                 radius for metallicity.
-705-725   F21.17 solRad corrected_radius          Radius of the star when
+704-724   F21.17 solRad corrected_radius          Radius of the star when
                                                 corrected for the effects of
                                                 metallicity.
-727-747   F21.17 solRad corrected_radius_lbound   Lower bound on the confidence
+726-746   F21.17 solRad corrected_radius_lbound   Lower bound on the confidence
                                                 interval of our metallicity
                                                 corrected radius.
-749-769   F21.17 solRad corrected_radius_ubound   Upper bound on the confidence
+748-768   F21.17 solRad corrected_radius_ubound   Upper bound on the confidence
                                                 interval of our metallicity
                                                 corrected radius.
-771-777   F7.2   dex fe_h                      Measured metallicity of the
+770-776   F7.2   dex fe_h                      Measured metallicity of the
                                                 target.
-779-797   A19    ---    fe_h_bibcode              The bibcode corresponding to
+778-796   A19    ---    fe_h_bibcode              The bibcode corresponding to
                                                 the source of the metallicity
                                                 measurement.
-799-822   F24.19 solRad rad_corr                  The correction applied to our
+798-822   F25.20 solRad rad_corr                  The correction applied to our
                                                 measured radius to correct for
                                                 metallicity, measured in
                                                 $R_\odot$.
@@ -263,7 +263,7 @@ Byte-by-byte Description of file: table4-lsed-r-relation.dat
  22- 41   F20.18 solRad radius_correction        [0.0/0.0]? Radius correction to
                                                the D08 4Gyr isochrone at
                                                luminosity L_SED.
- 43- 65   F23.20 solRad radius_correction_lbound [-0.0/0.0]? Description
+ 43- 65   E23.16 solRad radius_correction_lbound Description
  67- 86   F20.18 solRad radius_correction_ubound [0.0/0.1]? Description
  88-106   F19.17 solRad radius                   [0.2/0.6]? Radius prescribed by
                                                the relation at luminosity L_SED.
@@ -368,100 +368,100 @@ Byte-by-byte Description of file: mdwarf-properties.fits
                                                 in AllWISE.
 314-317   I4     ---    model_no                  [0.0/3535.0]? Number of the
                                                 best fitting model in our grid.
-319-336   F18.15 ---    norm                      [45.0/51.0]? Magnitude
+319-336   F18.15 ---    norm                      [45.0/50.9]? Magnitude
                                                 normalisation calculated by the
                                                 code to scale $Z_i$ to $m_{i,
                                                 \text{syn}}$.
-338-360   F23.18 ---    chisq                     [0.0/3248.6]? Goodness of fit
+338-359   F22.17 ---    chisq                     [0.1/3255.5]? Goodness of fit
                                                 for the best fitting model.
-362-383   F22.18 ---    reduced_chisq             [0.0/406.1]? Goodness of fit
+361-382   F22.18 ---    reduced_chisq             [0.0/406.9]? Goodness of fit
                                                 per degree of freedom for the
                                                 best fitting model.
-385-405   F21.19 ---    prob                      [0.0/1.0]? The corresponding
+384-404   F21.19 ---    prob                      [0.0/1.0]? The corresponding
                                                 probability of being the best
                                                 fitting model.
-407-428   E22.17 ---    rsqr_on_dsqr              Measured radius squared on
+406-427   E22.17 ---    rsqr_on_dsqr              Measured radius squared on
                                                 distance squared of the target.
-430-448   F19.17 solRad radius                    [0.0/1.3]? Our measured radius
+429-447   F19.17 solRad radius                    [0.0/1.3]? Our measured radius
                                                 of the target (in units of
                                                 $R_{\odot}$).
-450-466   F17.14 pc     dist                      [9.5/100.0]? Estimated
+449-465   F17.14 pc     dist                      [9.5/100.0]? Estimated
                                                 distance (in pc) to the target.
-468-484   F17.14 pc     dist_lbound               [9.5/99.7]? Lower bound on the
+467-483   F17.14 pc     dist_lbound               [9.5/99.7]? Lower bound on the
                                                 confidence interval of the
                                                 estimated distance (in pc).
-486-503   F18.14 pc     dist_ubound               [9.5/100.5]? Upper bound on
+485-502   F18.14 pc     dist_ubound               [9.5/100.5]? Upper bound on
                                                 the confidence interval of the
                                                 estimated distance (in pc).
-505-505   I1     ---    nphot                     [8.0]? The number of
+504-504   I1     ---    nphot                     [8.0]? The number of
                                                 photometric data points used for
                                                 the SED fitting.
-507-512   F6.1   K      Teff                      [2900.0/5100.0]? Our measured
+506-511   F6.1   K      Teff                      [2900.0/5100.0]? Our measured
                                                 SED temperature of the target.
-514-516   F3.1   dex Log(g)                    [4.0/5.5]? Our measured surface
+513-515   F3.1   dex Log(g)                    [4.0/5.5]? Our measured surface
                                                 gravity of the target.
-518-522   E5.4   ---    bad_phot                  Flag showing whether source is
+517-521   E5.4   ---    bad_phot                  Flag showing whether source is
                                                 consistent with contaminated
                                                 photometry in Gaia DR2.
-524-528   E5.4   ---    bad_astr                  Flag indicating whether source
+523-527   E5.4   ---    bad_astr                  Flag indicating whether source
                                                 is consistent with contaminated
                                                 astrometry in Gaia DR2.
-530-534   E5.4   ---    bad_teff                  Flag indicating that the
+529-533   E5.4   ---    bad_teff                  Flag indicating that the
                                                 measured $T_{\rm SED}$ is at a
                                                 grid boundary.
-536-540   E5.4   ---    good                      True if none of
+535-539   E5.4   ---    good                      True if none of
                                                 \textbf{bad\_phot},
                                                 \textbf{bad\_astr} or
                                                 \textbf{bad\_teff} are true for
                                                 the source.
-542-547   F6.1   K      teff_lbound               Lower bound on the confidence
+541-546   F6.1   K      teff_lbound               Lower bound on the confidence
                                                 interval of our measured $T_{\rm
                                                 SED}$.
-549-554   F6.1   K      teff_ubound               Upper bound on the confidence
+548-553   F6.1   K      teff_ubound               Upper bound on the confidence
                                                 interval of our measured $T_{\rm
                                                 SED}$.
-556-567   F12.8  dex logg_lbound               Lower bound on the confidence
+555-566   F12.8  dex logg_lbound               Lower bound on the confidence
                                                 interval of our measured
                                                 $\log(g)$.
-569-580   F12.8  dex logg_ubound               Upper bound on the confidence
+568-579   F12.8  dex logg_ubound               Upper bound on the confidence
                                                 interval of our measured
                                                 $\log(g)$.
-582-594   F13.9  solRad radius_lbound             Lower bound on the confidence
+581-593   F13.9  solRad radius_lbound             Lower bound on the confidence
                                                 interval of our measured radius.
-596-608   F13.9  solRad radius_ubound             Upper bound on the confidence
+595-607   F13.9  solRad radius_ubound             Upper bound on the confidence
                                                 interval of our measured radius.
-610-624   F15.10 ---    tau_sq_68_contour         Value of $\chi^2$ within which
+609-623   F15.10 ---    tau_sq_68_contour         Value of $\chi^2$ within which
                                                 68\% of the confidence is
                                                 bounded within the cube.
-626-631   A6     ---    uncer_sample              Sample for which the
+625-630   A6     ---    uncer_sample              Sample for which the
                                                 uncertainties correspond. For
                                                 this publication, it will be
                                                 'random'.
-633-655   F23.19 ---    d08_inflation             [-44.8/50.3]? Radius inflation
+632-654   F23.19 ---    d08_inflation             [-44.8/50.3]? Radius inflation
                                                 (in \%) from the
                                                 \citet{Dotter:2008aa} 4Gyr solar
                                                 metallicity isochrone.
-657-680   E24.17 solRad d08_lum_corr_radius       Radius residual when corrected
+656-679   E24.17 solRad d08_lum_corr_radius       Radius residual when corrected
                                                 for our luminosity - radius
                                                 relation.
-682-703   F22.18 solLum lum                       Luminosity measured for the
+681-702   F22.18 solLum lum                       Luminosity measured for the
                                                 source when correcting the
                                                 radius for metallicity.
-705-725   F21.17 solRad corrected_radius          Radius of the star when
+704-724   F21.17 solRad corrected_radius          Radius of the star when
                                                 corrected for the effects of
                                                 metallicity.
-727-747   F21.17 solRad corrected_radius_lbound   Lower bound on the confidence
+726-746   F21.17 solRad corrected_radius_lbound   Lower bound on the confidence
                                                 interval of our metallicity
                                                 corrected radius.
-749-769   F21.17 solRad corrected_radius_ubound   Upper bound on the confidence
+748-768   F21.17 solRad corrected_radius_ubound   Upper bound on the confidence
                                                 interval of our metallicity
                                                 corrected radius.
-771-777   F7.2   dex fe_h                      Measured metallicity of the
+770-776   F7.2   dex fe_h                      Measured metallicity of the
                                                 target.
-779-797   A19    ---    fe_h_bibcode              The bibcode corresponding to
+778-796   A19    ---    fe_h_bibcode              The bibcode corresponding to
                                                 the source of the metallicity
                                                 measurement.
-799-822   F24.19 solRad rad_corr                  The correction applied to our
+798-822   F25.20 solRad rad_corr                  The correction applied to our
                                                 measured radius to correct for
                                                 metallicity, measured in
                                                 $R_\odot$.
@@ -492,7 +492,7 @@ Byte-by-byte Description of file: table4-lsed-r-relation.fits
  22- 41   F20.18 solRad radius_correction        [0.0/0.0]? Radius correction to
                                                the D08 4Gyr isochrone at
                                                luminosity L_SED.
- 43- 65   F23.20 solRad radius_correction_lbound [-0.0/0.0]? Description
+ 43- 65   E23.16 solRad radius_correction_lbound Description
  67- 86   F20.18 solRad radius_correction_ubound [0.0/0.1]? Description
  88-106   F19.17 solRad radius                   [0.2/0.6]? Radius prescribed by
                                                the relation at luminosity L_SED.
