@@ -9,6 +9,7 @@ Sam Morrell and Tim Naylor (2019) - Accepted for publication in MNRAS 03 August 
 **ADS**: https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.2615M/abstract
 
 ----
+**Last Updated: 9th March 2020**
 
 This repository contains the supplementary material for Morrell and Naylor (2019). Incuded are:
 
