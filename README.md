@@ -9,7 +9,7 @@ Sam Morrell and Tim Naylor (2019) - Accepted for publication in MNRAS 03 August 
 **ADS**: https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.2615M/abstract
 
 ----
-**Last Updated: 9th March 2020**
+**Last Updated: 11th August 2020**
 
 This repository contains the supplementary material for Morrell and Naylor (2019). Incuded are:
 
@@ -31,3 +31,4 @@ For your convenience, these catalogues are also available on:
 **CDS**: https://cdsarc.unistra.fr/viz-bin/cat/VI/156
 
 **Open Research Exeter Repository**: https://ore.exeter.ac.uk/repository/handle/10871/38279
+
