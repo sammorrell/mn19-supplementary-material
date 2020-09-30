@@ -8,6 +8,10 @@ Sam Morrell and Tim Naylor (2019) - Accepted for publication in MNRAS 03 August 
 
 **ADS**: https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.2615M/abstract
 
+The erratum paper, describing the changes we have made in the 2020.8 release of this supplementary dataset, is now available via MNRAS at the following link. 
+
+**Erratum**: https://doi.org/10.1093/mnras/staa926
+
 ----
 **Last Updated: 11th August 2020**
 
