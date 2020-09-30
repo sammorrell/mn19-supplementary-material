@@ -28,7 +28,15 @@ We also include the polynomial coefficients used for the $T_{\rm SED} - R$ relat
 
 We also provide **mn19.py** which includes a Python 3 module for easily working with the provided coefficients.
 
-----
+## Version History
+
+[**2019.8**](https://github.com/sammorrell/mn19-supplementary-material/releases/tag/2019.8) - The original version of the catalogue. 
+
+[**2020.3**](https://github.com/sammorrell/mn19-supplementary-material/releases/tag/2020.3) - A revised version of the catalogue, including a corrected Gaia zero point and re-normalisation of input stellar atmospheres. Details of the changes are included in the erratum paper. 
+
+[**2020.8**](https://github.com/sammorrell/mn19-supplementary-material/releases/tag/2020.8) - A further revision of the catalogue which includes improved uncertainties. This is the version accompanying the erratum.  
+
+---
 
 For your convenience, these catalogues are also available on:
 
