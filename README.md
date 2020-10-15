@@ -36,7 +36,7 @@ We also provide **mn19.py** which includes a Python 3 module for easily working 
 
 [**2020.8**](https://github.com/sammorrell/mn19-supplementary-material/releases/tag/2020.8) - A further revision of the catalogue which includes improved uncertainties. This is the version accompanying the erratum.  
 
-[**2020.10**](https://github.com/sammorrell/mn19-supplementary-material/releases/tag/2020.10) - A small incremental release to correct the uncertainties included in the M-dwarf uncertainties catalogue. Those included as part of the 2020.8 release were inconsistent with the erratum paper, and are underestimates of the formal uncertainties. 
+[**2020.10**](https://github.com/sammorrell/mn19-supplementary-material/releases/tag/2020.10) - A small incremental release to correct the uncertainties included in the M-dwarf properties catalogue. Those incorrectly included as part of the 2020.8 release were inconsistent with the erratum paper, and underestimates of the formal uncertainties. 
 
 ---
 
