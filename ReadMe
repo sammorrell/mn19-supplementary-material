@@ -31,11 +31,11 @@ File Summary:
  FileName    Lrecl   Records    Explanations
 --------------------------------------------------------------------------------
 ReadMe                       80        .  this file
-mdwarf-properties.dat       831    15765  Input data and fitted properties for stars in our sample. 
+mdwarf-properties.dat       832    15765  Input data and fitted properties for stars in our sample. 
 table3-tsed-r-relation.dat   64     1401  A tabulated form of our T_SED - R relation for M-dwarf stars. 
 table4-lsed-r-relation.dat  146       98  A tabulated form of our L_SED - R relation for M-dwarf stars. 
 table5-tabulated-flsed.dat   43       97  An electronic version of Table 3, which contains the tabulated values of F(L_SED) in equation 16. 
-mdwarf-properties.fits      831    15765  A FITS version of our main catalogue. 
+mdwarf-properties.fits      832    15765  A FITS version of our main catalogue. 
 table3-tsed-r-relation.fits  64     1401  A FITS version of our tabulated T_SED - R relation. 
 table4-lsed-r-relation.fits 146       98  A FITS version of our tabulated L_SED - R relation. 
 table5-tabulated-flsed.fits  43       97  A FITS version of our tabulated values of F(L_SED). 
@@ -191,48 +191,48 @@ Byte-by-byte Description of file: mdwarf-properties.dat
 552-561   F10.5  K      teff_ubound               Upper bound on the confidence
                                                 interval of our measured $T_{\rm
                                                 SED}$.
-563-574   F12.8  dex logg_lbound               Lower bound on the confidence
+563-575   F13.8  dex logg_lbound               Lower bound on the confidence
                                                 interval of our measured
                                                 $\log(g)$.
-576-587   F12.8  dex logg_ubound               Upper bound on the confidence
+577-588   F12.8  dex logg_ubound               Upper bound on the confidence
                                                 interval of our measured
                                                 $\log(g)$.
-589-601   F13.9  solRad radius_lbound             Lower bound on the confidence
+590-602   F13.9  solRad radius_lbound             Lower bound on the confidence
                                                 interval of our measured radius.
-603-615   F13.9  solRad radius_ubound             Upper bound on the confidence
+604-616   F13.9  solRad radius_ubound             Upper bound on the confidence
                                                 interval of our measured radius.
-617-632   F16.11 ---    tau_sq_68_contour         Value of $\chi^2$ within which
+618-633   F16.11 ---    tau_sq_68_contour         Value of $\chi^2$ within which
                                                 68\% of the confidence is
                                                 bounded within the cube.
-634-639   A6     ---    uncer_sample              Sample for which the
+635-640   A6     ---    uncer_sample              Sample for which the
                                                 uncertainties correspond. For
                                                 this publication, it will be
                                                 'random'.
-641-663   F23.19 ---    d08_inflation             [-44.8/50.3]? Radius inflation
+642-664   F23.19 ---    d08_inflation             [-44.8/50.3]? Radius inflation
                                                 (in \%) from the
                                                 \citet{Dotter:2008aa} 4Gyr solar
                                                 metallicity isochrone.
-665-688   E24.17 solRad d08_lum_corr_radius       Radius residual when corrected
+666-689   E24.17 solRad d08_lum_corr_radius       Radius residual when corrected
                                                 for our luminosity - radius
                                                 relation.
-690-711   F22.18 solLum lum                       Luminosity measured for the
+691-712   F22.18 solLum lum                       Luminosity measured for the
                                                 source when correcting the
                                                 radius for metallicity.
-713-733   F21.17 solRad corrected_radius          Radius of the star when
+714-734   F21.17 solRad corrected_radius          Radius of the star when
                                                 corrected for the effects of
                                                 metallicity.
-735-755   F21.17 solRad corrected_radius_lbound   Lower bound on the confidence
+736-756   F21.17 solRad corrected_radius_lbound   Lower bound on the confidence
                                                 interval of our metallicity
                                                 corrected radius.
-757-777   F21.17 solRad corrected_radius_ubound   Upper bound on the confidence
+758-778   F21.17 solRad corrected_radius_ubound   Upper bound on the confidence
                                                 interval of our metallicity
                                                 corrected radius.
-779-785   F7.2   dex fe_h                      Measured metallicity of the
+780-786   F7.2   dex fe_h                      Measured metallicity of the
                                                 target.
-787-805   A19    ---    fe_h_bibcode              The bibcode corresponding to
+788-806   A19    ---    fe_h_bibcode              The bibcode corresponding to
                                                 the source of the metallicity
                                                 measurement.
-807-831   F25.20 solRad rad_corr                  The correction applied to our
+808-832   F25.20 solRad rad_corr                  The correction applied to our
                                                 measured radius to correct for
                                                 metallicity, measured in
                                                 $R_\odot$.
@@ -420,48 +420,48 @@ Byte-by-byte Description of file: mdwarf-properties.fits
 552-561   F10.5  K      teff_ubound               Upper bound on the confidence
                                                 interval of our measured $T_{\rm
                                                 SED}$.
-563-574   F12.8  dex logg_lbound               Lower bound on the confidence
+563-575   F13.8  dex logg_lbound               Lower bound on the confidence
                                                 interval of our measured
                                                 $\log(g)$.
-576-587   F12.8  dex logg_ubound               Upper bound on the confidence
+577-588   F12.8  dex logg_ubound               Upper bound on the confidence
                                                 interval of our measured
                                                 $\log(g)$.
-589-601   F13.9  solRad radius_lbound             Lower bound on the confidence
+590-602   F13.9  solRad radius_lbound             Lower bound on the confidence
                                                 interval of our measured radius.
-603-615   F13.9  solRad radius_ubound             Upper bound on the confidence
+604-616   F13.9  solRad radius_ubound             Upper bound on the confidence
                                                 interval of our measured radius.
-617-632   F16.11 ---    tau_sq_68_contour         Value of $\chi^2$ within which
+618-633   F16.11 ---    tau_sq_68_contour         Value of $\chi^2$ within which
                                                 68\% of the confidence is
                                                 bounded within the cube.
-634-639   A6     ---    uncer_sample              Sample for which the
+635-640   A6     ---    uncer_sample              Sample for which the
                                                 uncertainties correspond. For
                                                 this publication, it will be
                                                 'random'.
-641-663   F23.19 ---    d08_inflation             [-44.8/50.3]? Radius inflation
+642-664   F23.19 ---    d08_inflation             [-44.8/50.3]? Radius inflation
                                                 (in \%) from the
                                                 \citet{Dotter:2008aa} 4Gyr solar
                                                 metallicity isochrone.
-665-688   E24.17 solRad d08_lum_corr_radius       Radius residual when corrected
+666-689   E24.17 solRad d08_lum_corr_radius       Radius residual when corrected
                                                 for our luminosity - radius
                                                 relation.
-690-711   F22.18 solLum lum                       Luminosity measured for the
+691-712   F22.18 solLum lum                       Luminosity measured for the
                                                 source when correcting the
                                                 radius for metallicity.
-713-733   F21.17 solRad corrected_radius          Radius of the star when
+714-734   F21.17 solRad corrected_radius          Radius of the star when
                                                 corrected for the effects of
                                                 metallicity.
-735-755   F21.17 solRad corrected_radius_lbound   Lower bound on the confidence
+736-756   F21.17 solRad corrected_radius_lbound   Lower bound on the confidence
                                                 interval of our metallicity
                                                 corrected radius.
-757-777   F21.17 solRad corrected_radius_ubound   Upper bound on the confidence
+758-778   F21.17 solRad corrected_radius_ubound   Upper bound on the confidence
                                                 interval of our metallicity
                                                 corrected radius.
-779-785   F7.2   dex fe_h                      Measured metallicity of the
+780-786   F7.2   dex fe_h                      Measured metallicity of the
                                                 target.
-787-805   A19    ---    fe_h_bibcode              The bibcode corresponding to
+788-806   A19    ---    fe_h_bibcode              The bibcode corresponding to
                                                 the source of the metallicity
                                                 measurement.
-807-831   F25.20 solRad rad_corr                  The correction applied to our
+808-832   F25.20 solRad rad_corr                  The correction applied to our
                                                 measured radius to correct for
                                                 metallicity, measured in
                                                 $R_\odot$.
